@@ -5,7 +5,7 @@ const bodyparser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
 
-app.use(logerrors)
+
 
 const app = express()
 
@@ -44,7 +44,3 @@ app.listen(port, () => {
     console.log("server running")
 })
 
-function logerrors(err, req, res, next) {
-    res.status(500)
-    console.log(" ERROR raised: " + err)
-}
