@@ -1,0 +1,53 @@
+<form class="navbar-form navbar-left">
+    <div class="form-group">
+        <input type="text" [(ngModel)]="moviename" name="moviename" class="form-control" placeholder="Search movie">
+    </div>
+    <button type="submit" (click)=searchMovie() class="btn btn-default">SEARCH</button><br>
+    <div class="form-group">
+        <input type="text" [(ngModel)]="actorname" name="actorname" class="form-control" placeholder="Search actor">
+    </div>
+    <button type="submit" (click)=searchActor() class="btn btn-default">SEARCH</button><br>
+    <div class="form-group">
+        <input type="text" [(ngModel)]="directorname" name="directorname" class="form-control" placeholder="Search director">
+    </div>
+    <button type="submit" (click)=searchDirector() class="btn btn-default">SEARCH</button>
+</form>
+
+
+
+
+<div align="center" class="border-0" style="float:left" class="col-sm-3">
+    <ul>
+        <ol><img src="{{image_url}}" class="img-responsive"></ol>
+        <ol><b>{{movie_name | uppercase}}</b></ol>
+        <ol>{{description}}</ol>
+        <ol>{{year}}</ol>
+        <ol><b>{{rating}}</b></ol>
+        <ol>{{actors}}</ol>
+        <ol>{{directors}}</ol>
+    </ul>
+</div>
+
+
+<ul>
+    <div align="center" class="card" style="float:left" class="col-sm-3">
+
+        <ol><img src="{{actor_image_url}}" class="img-responsive"></ol>
+        <ol><b>{{actor_name | uppercase}}</b></ol>
+        <ol>{{actor_age}}</ol>
+        <ol>{{actor_gender}}</ol>
+        <ol>{{actor_acted}}</ol>
+    </div>
+</ul>
+
+
+<ul>
+    <div align="center" class="card" style="float:left" class="col-sm-3">
+
+        <ol><img src="{{director_image_url}}" class="img-responsive"></ol>
+        <ol><b>{{director_name | uppercase}}</b></ol>
+        <ol>{{director_age}}</ol>
+        <ol>{{director_gender}}</ol>
+        <ol>{{directed_movies}}</ol>
+    </div>
+</ul>

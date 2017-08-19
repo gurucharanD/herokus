@@ -1,0 +1,37 @@
+<div class="form-group">
+    <input type="text" [(ngModel)]="actorname" class="form-control" placeholder="Search">
+</div>
+<button type="submit" class="btn btn-default" (click)=search()>SEARCH</button>
+
+
+
+
+
+
+
+<div class="container">
+    <h2 class="page-header">UPDATE ACTOR</h2>
+    <form>
+        <div class="form-group">
+            <label>Name</label><br>
+            <input type="text" [(ngModel)]="name" name="name" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Image</label><br>
+            <input type="text" [(ngModel)]="image_url" name="image_url" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Age</label><br>
+            <input type="Number" [(ngModel)]="age" name="age" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>GENDER</label><br>
+            <input type="text" [(ngModel)]="gender" name="gender" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>ACTED</label><br>
+            <input type="text" [(ngModel)]="acted" name="acted" class="form_control" required>
+        </div>
+        <input type="submit" class="btn btn btn-primary" value="UPDATE" (click)="updateActor()"></form>
+</div>
+<hr>

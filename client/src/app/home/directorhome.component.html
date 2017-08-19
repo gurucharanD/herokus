@@ -1,0 +1,12 @@
+<ul *ngFor="let director of directors">
+    <div align="center" style="float:left" class="col-sm-3">
+        <ol><img src="{{director.image_url}}" class="img-responsive"></ol>
+        <ol><b>{{director.name | uppercase}}</b></ol>
+        <ol>Age:{{director.age}}</ol>
+        <ol>Gender:{{director.gender}}</ol>
+        <ol>Directed:{{director.directed_movies}}</ol>
+
+    </div>
+</ul>
+
+{{error}}

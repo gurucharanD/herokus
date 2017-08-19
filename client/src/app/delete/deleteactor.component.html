@@ -1,0 +1,10 @@
+<ul *ngFor="let actor of actors">
+    <div align="center" style="float:left" class="col-sm-3">
+        <ol><img src="{{actor.image_url}}" class="img-responsive"></ol>
+        <ol>{{actor.name}}</ol>
+        <ol>{{actor.age}}</ol>
+        <ol>{{actor.gender}}</ol>
+        <ol>{{actor.acted}}</ol>
+        <ol><input type="button" (click)="deleteActor(actor._id)" value="Delete" class="btn btn-danger"></ol>
+    </div>
+</ul>

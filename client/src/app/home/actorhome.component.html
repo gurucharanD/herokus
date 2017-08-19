@@ -1,0 +1,11 @@
+<ul *ngFor="let actor of actors">
+    <div align="center" style="float:left" class="col-sm-3">
+        <ol><img src="{{actor.image_url}}" class="img-responsive"></ol>
+        <ol><b>{{actor.name | uppercase}}</b></ol>
+        <ol>Age:{{actor.age}}</ol>
+        <ol>Gender:{{actor.gender}}</ol>
+        <ol>Acted:{{actor.acted}}</ol>
+    </div>
+</ul>
+
+{{error}}

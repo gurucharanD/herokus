@@ -1,0 +1,34 @@
+<div class="container">
+    <h2 class="page-header">ADD MOVIE</h2>
+    <form>
+        <div class="form-group">
+            <label>Movie Name</label><br>
+            <input type="text" [(ngModel)]="movie_name" name="movie_name" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Image</label><br>
+            <input type="text" [(ngModel)]="image_url" name="image_url" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Description</label><br>
+            <input type="text" [(ngModel)]="description" name="description" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Year</label><br>
+            <input type="text" [(ngModel)]="year" name="year" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Rating</label><br>
+            <input type="number" [(ngModel)]="rating" name="rating" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Actors</label><br>
+            <input type="text" [(ngModel)]="actors" name="actors" class="form_control" placeholder="seperate by ," required>
+        </div>
+        <div class="form-group">
+            <label>Directors</label><br>
+            <input type="text" [(ngModel)]="directors" name="directors" class="form_control" placeholder="seperate by ," required>
+        </div>
+        <input type="submit" class="btn btn btn-primary" value="Add" (click)="addMovie()"></form>
+</div>
+<hr>

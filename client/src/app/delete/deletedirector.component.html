@@ -1,0 +1,10 @@
+<ul *ngFor="let director of directors">
+    <div align="center" style="float:left" class="col-sm-3">
+        <ol><img src="{{director.image_url}}" class="img-responsive"></ol>
+        <ol>{{director.name}}</ol>
+        <ol>{{director.age}}</ol>
+        <ol>{{director.gender}}</ol>
+        <ol>{{director.directed_movies}}</ol>
+        <ol><input type="button" (click)="deleteDirector(director._id)" value="Delete" class="btn btn-danger"></ol>
+    </div>
+</ul>

@@ -1,0 +1,18 @@
+<ul *ngFor="let movie of movies">
+    <div align="center" class="card" style="float:left" class="col-sm-3">
+
+        <ol><img src="{{movie.image_url}}" class="img-responsive"></ol>
+        <ol><b>{{movie.movie_name | uppercase}}</b></ol>
+        <ol>Description:{{movie.description}}</ol>
+        <ol>Year:{{movie.year}}</ol>
+        <ol><b>Rating:{{movie.rating}}/10</b></ol>
+        <ol>Actors:{{movie.actors}}</ol>
+        <ol>Director:{{movie.directors}}</ol>
+        <ol><b>ID:{{movie._id}}</b></ol>
+
+    </div>
+</ul>
+
+
+
+{{error}}

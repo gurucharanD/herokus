@@ -1,0 +1,12 @@
+<ul *ngFor="let movie of movies">
+    <div align="center" style="float:left" class="col-sm-3">
+        <ol><img src="{{movie.image_url}}" class="img-responsive"></ol>
+        <ol>{{movie.movie_name}}</ol>
+        <ol>{{movie.description}}</ol>
+        <ol>{{movie.year}}</ol>
+        <ol>{{movie.rating}}</ol>
+        <ol>{{movie.actors}}</ol>
+        <ol>{{movie.directors}}</ol>
+        <ol><input type="button" (click)="deleteMovie(movie._id)" value="Delete" class="btn btn-danger"></ol>
+    </div>
+</ul>

@@ -1,0 +1,26 @@
+<div class="container">
+    <h2 class="page-header">ADD ACTOR</h2>
+    <form>
+        <div class="form-group">
+            <label>Name</label><br>
+            <input type="text" [(ngModel)]="name" name="name" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Image</label><br>
+            <input type="text" [(ngModel)]="image_url" name="image_url" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Age</label><br>
+            <input type="number" [(ngModel)]="age" name="age" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Gender</label><br>
+            <input type="text" [(ngModel)]="gender" name="gender" class="form_control" required>
+        </div>
+        <div class="form-group">
+            <label>Acted Movies</label><br>
+            <input type="text" [(ngModel)]="acted" name="acted" class="form_control" placeholder="seperate by ," required>
+        </div>
+        <input type="submit" class="btn btn btn-primary" value="Add" (click)="addActor()"></form>
+</div>
+<hr>
